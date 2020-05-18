@@ -30,13 +30,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:layout_marginEnd="8dp"
             android:textAppearance="@style/TextAppearance.AppCompat.Body1"
             tools:text="Hello" />
 
         <com.facebook.drawee.view.SimpleDraweeView
             android:id="@+id/hrfImage"
             android:layout_width="130dp"
-            android:layout_height="130dp"
+            android:layout_height="100dp"
+            fresco:actualImageScaleType="centerCrop"
+            fresco:placeholderImageScaleType="centerCrop"
             fresco:placeholderImage="@drawable/ic_launcher_background" />
     </LinearLayout>
 </LinearLayout>
