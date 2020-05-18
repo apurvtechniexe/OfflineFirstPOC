@@ -48,15 +48,21 @@ dependencies {
 
 
     def arch_version = '2.2.0'
-    //coroutine scope
     implementation "androidx.lifecycle:lifecycle-extensions:$arch_version"
     implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$arch_version"
     implementation "androidx.lifecycle:lifecycle-livedata-ktx:$arch_version"
     implementation "androidx.lifecycle:lifecycle-runtime-ktx:$arch_version"
 
 
+    //glide for image loading
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
+
     implementation 'androidx.recyclerview:recyclerview:1.1.0'
     implementation 'androidx.cardview:cardview:1.0.0'
+
+    //cupboard for database
+    implementation 'nl.qbusict:cupboard:2.1.1'
 
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
